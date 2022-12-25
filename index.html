@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js" type="text/javascript" ></script>
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <center><img class="logoImg" src="img/logo.png"></center>
+        </div>
+        <center><h1>Cifrado Alura</h1></center>
+        <form id="cifrador" autocomplete="off">
+            <input id="input-original" spellcheck="false" placeholder="Ingrese el texto..." type="text" name="text">
+        </form>
+        <div class="text-area">
+            <textarea class="frase-codificada" id="resultado" readonly></textarea></div> 
+        <div class="left-button">
+            <button type="button" id="copiar" onclick="copy()">Copiar</button>
+            <p>solo minusculas y sin acentos.</p>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">
+                Encriptar
+            </button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    --color-terminal: #292b36;
+    --borde-redondo: 4px;
+}
+* {
+    font-family:'Source Code Pro', monospace;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16161a;
+    color: #fffffe;
+}
+
+
+
+input, button {
+    border: none;
+    outline: none;
+}
+main {
+    padding: 25px;
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 /100%);
+    border-radius: var(--borde-redondo);
+}
+
+h1 {
+    margin: 0;
+}
+#input-original, #resultado {
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+
+#input-original {
+    margin: 10px 0 0;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+#resultado {
+    height: 70px;
+    color: #5af68d;
+    padding: 0 10px 10px;
+    border-bottom-left-radius: var(--borde-redondo);
+    border-bottom-right-radius: var(--borde-redondo);
+    border: 0;
+    outline: none;
+    resize:none;
+    
+}
+#copiar{
+    position: relative;
+    margin-top: 5%;
+    margin-left:38%;
+    display: none;
+    background: #7f5af0;
+    color: #fffffe;
+    border: none;
+    outline: none;
+    background: #7f5af0;
+    color: #fffffe;
+    cursor: pointer;
+    transition: .2s;
+}
+#copiar:hover {
+    position: relative;
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: .1s;
+}
+#btn-desencriptar{
+    position: relative;
+    display: inline-block;
+    margin-left:20%;
+    padding: 5px 12px;
+    border: none;
+    outline: none;
+    background: #7f5af0;
+    color: #fffffe;
+    cursor: pointer;
+    transition: .2s;
+}
+#btn-desencriptar:hover {
+    position: relative;
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: .1s;
+}
+#btn-encriptar{
+    position: relative;
+    display: inline-block;
+    padding: 5px 12px;
+    border: none;
+    outline: none;
+    background: #7f5af0;
+    color: #fffffe;
+    cursor: pointer;
+    transition: .2s;
+    overflow: hidden;
+}
+#btn-encriptar:hover {
+    position: relative;
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: .1s;
+}
